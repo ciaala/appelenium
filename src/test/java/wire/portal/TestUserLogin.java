@@ -53,7 +53,7 @@ public class TestUserLogin {
     @Test
     public void userCanLoginAndLogout() {
         //
-        loginPage.loginAttempt("fiduccia", "PASSWORD");
+        loginPage.loginAttempt("USER", "PASSWORD");
         portalPage.recognize();
         Assert.assertNotNull("Wire's header is missing", webDriver.findElement(By.className("LoginForm")));
     }
